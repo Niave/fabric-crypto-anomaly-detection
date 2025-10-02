@@ -1,0 +1,922 @@
+[
+  {
+    "session_id": "sess_1",
+    "user_id": "user_13",
+    "start_time": "2025-09-30T14:52:11.699670",
+    "end_time": "2025-09-30T15:49:11.699670",
+    "events": [
+      {
+        "type": "view_product",
+        "product_id": "PROD_002",
+        "timestamp": "2025-09-30T15:14:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_009",
+        "timestamp": "2025-09-30T15:15:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T15:48:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_003",
+        "timestamp": "2025-09-30T15:49:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_2",
+    "user_id": "user_4",
+    "start_time": "2025-09-29T04:52:11.699670",
+    "end_time": "2025-09-29T05:50:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_001",
+        "timestamp": "2025-09-29T04:55:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-29T05:15:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-29T05:26:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-29T05:31:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-29T05:50:11.699670"
+      }
+    ],
+    "device": {
+      "os": "iOS",
+      "browser": "Chrome"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Stavanger"
+    }
+  },
+  {
+    "session_id": "sess_3",
+    "user_id": "user_20",
+    "start_time": "2025-09-30T16:52:11.699670",
+    "end_time": "2025-09-30T17:39:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-30T17:12:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_009",
+        "timestamp": "2025-09-30T17:39:11.699670"
+      }
+    ],
+    "device": {
+      "os": "iOS",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_4",
+    "user_id": "user_7",
+    "start_time": "2025-09-30T03:52:11.699670",
+    "end_time": "2025-09-30T04:43:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-30T04:11:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T04:28:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-30T04:29:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_010",
+        "timestamp": "2025-09-30T04:36:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-09-30T04:43:11.699670"
+      }
+    ],
+    "device": {
+      "os": "iOS",
+      "browser": "Edge"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_5",
+    "user_id": "user_17",
+    "start_time": "2025-09-29T20:52:11.699670",
+    "end_time": "2025-09-29T21:45:11.699670",
+    "events": [
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-09-29T21:25:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-29T21:35:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-29T21:45:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Firefox"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_6",
+    "user_id": "user_1",
+    "start_time": "2025-10-02T03:52:11.699670",
+    "end_time": "2025-10-02T04:24:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-02T04:19:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-02T04:23:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_004",
+        "timestamp": "2025-10-02T04:24:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Chrome"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_7",
+    "user_id": "user_14",
+    "start_time": "2025-10-01T04:52:11.699670",
+    "end_time": "2025-10-01T05:44:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T05:22:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-10-01T05:28:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_001",
+        "timestamp": "2025-10-01T05:44:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_8",
+    "user_id": "user_20",
+    "start_time": "2025-09-28T12:52:11.699670",
+    "end_time": "2025-09-28T13:42:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-28T13:09:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_002",
+        "timestamp": "2025-09-28T13:10:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_003",
+        "timestamp": "2025-09-28T13:20:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_004",
+        "timestamp": "2025-09-28T13:38:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-09-28T13:40:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_004",
+        "timestamp": "2025-09-28T13:42:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Linux",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Stavanger"
+    }
+  },
+  {
+    "session_id": "sess_9",
+    "user_id": "user_18",
+    "start_time": "2025-10-01T22:52:11.699670",
+    "end_time": "2025-10-01T23:37:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-01T22:57:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-01T23:02:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_004",
+        "timestamp": "2025-10-01T23:37:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Linux",
+      "browser": "Edge"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_10",
+    "user_id": "user_2",
+    "start_time": "2025-10-01T06:52:11.699670",
+    "end_time": "2025-10-01T07:47:11.699670",
+    "events": [
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-01T07:15:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T07:17:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_001",
+        "timestamp": "2025-10-01T07:17:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T07:40:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_009",
+        "timestamp": "2025-10-01T07:47:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_11",
+    "user_id": "user_16",
+    "start_time": "2025-10-02T05:52:11.699670",
+    "end_time": "2025-10-02T06:46:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T06:14:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_002",
+        "timestamp": "2025-10-02T06:30:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-02T06:32:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T06:34:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T06:46:11.699670"
+      }
+    ],
+    "device": {
+      "os": "iOS",
+      "browser": "Firefox"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_12",
+    "user_id": "user_9",
+    "start_time": "2025-09-30T08:52:11.699670",
+    "end_time": "2025-09-30T09:46:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-30T09:06:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T09:14:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T09:41:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_008",
+        "timestamp": "2025-09-30T09:46:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Windows",
+      "browser": "Chrome"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Stavanger"
+    }
+  },
+  {
+    "session_id": "sess_13",
+    "user_id": "user_8",
+    "start_time": "2025-09-28T21:52:11.699670",
+    "end_time": "2025-09-28T22:42:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_001",
+        "timestamp": "2025-09-28T22:08:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_001",
+        "timestamp": "2025-09-28T22:42:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Firefox"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_14",
+    "user_id": "user_5",
+    "start_time": "2025-09-29T20:52:11.699670",
+    "end_time": "2025-09-29T21:37:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-09-29T21:29:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-29T21:37:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Chrome"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_15",
+    "user_id": "user_10",
+    "start_time": "2025-10-01T19:52:11.699670",
+    "end_time": "2025-10-01T20:44:11.699670",
+    "events": [
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T19:54:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-10-01T20:30:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-01T20:36:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T20:37:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-10-01T20:38:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T20:44:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Windows",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_16",
+    "user_id": "user_12",
+    "start_time": "2025-10-02T00:52:11.699670",
+    "end_time": "2025-10-02T01:47:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_006",
+        "timestamp": "2025-10-02T00:59:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_009",
+        "timestamp": "2025-10-02T01:20:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T01:33:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_001",
+        "timestamp": "2025-10-02T01:34:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-02T01:34:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-02T01:47:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Edge"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_17",
+    "user_id": "user_14",
+    "start_time": "2025-09-28T11:52:11.699670",
+    "end_time": "2025-09-28T12:49:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-28T11:54:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_004",
+        "timestamp": "2025-09-28T12:10:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-28T12:32:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_010",
+        "timestamp": "2025-09-28T12:41:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-28T12:46:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_004",
+        "timestamp": "2025-09-28T12:49:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Edge"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Bergen"
+    }
+  },
+  {
+    "session_id": "sess_18",
+    "user_id": "user_12",
+    "start_time": "2025-09-30T23:52:11.699670",
+    "end_time": "2025-10-01T00:28:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-09-30T23:53:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T00:08:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_009",
+        "timestamp": "2025-10-01T00:10:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T00:28:11.699670"
+      }
+    ],
+    "device": {
+      "os": "iOS",
+      "browser": "Edge"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_19",
+    "user_id": "user_3",
+    "start_time": "2025-09-30T19:52:11.699670",
+    "end_time": "2025-09-30T20:35:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T20:18:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-30T20:28:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-09-30T20:35:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Stavanger"
+    }
+  },
+  {
+    "session_id": "sess_20",
+    "user_id": "user_15",
+    "start_time": "2025-09-30T22:52:11.699670",
+    "end_time": "2025-09-30T23:39:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_004",
+        "timestamp": "2025-09-30T23:00:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T23:06:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_002",
+        "timestamp": "2025-09-30T23:09:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_006",
+        "timestamp": "2025-09-30T23:39:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Android",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_21",
+    "user_id": "user_7",
+    "start_time": "2025-09-30T19:52:11.699670",
+    "end_time": "2025-09-30T20:16:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T19:53:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_009",
+        "timestamp": "2025-09-30T19:55:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-30T20:16:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Linux",
+      "browser": "Firefox"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  },
+  {
+    "session_id": "sess_22",
+    "user_id": "user_4",
+    "start_time": "2025-10-02T07:52:11.699670",
+    "end_time": "2025-10-02T08:33:11.699670",
+    "events": [
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-02T07:56:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_007",
+        "timestamp": "2025-10-02T08:00:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-02T08:11:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T08:21:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-02T08:24:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-02T08:33:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_23",
+    "user_id": "user_8",
+    "start_time": "2025-10-01T17:52:11.699670",
+    "end_time": "2025-10-01T18:41:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_005",
+        "timestamp": "2025-10-01T18:12:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T18:17:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T18:29:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_009",
+        "timestamp": "2025-10-01T18:31:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_004",
+        "timestamp": "2025-10-01T18:40:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_010",
+        "timestamp": "2025-10-01T18:41:11.699670"
+      }
+    ],
+    "device": {
+      "os": "macOS",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Oslo"
+    }
+  },
+  {
+    "session_id": "sess_24",
+    "user_id": "user_6",
+    "start_time": "2025-10-01T02:52:11.699670",
+    "end_time": "2025-10-01T03:37:11.699670",
+    "events": [
+      {
+        "type": "purchase",
+        "product_id": "PROD_008",
+        "timestamp": "2025-10-01T02:53:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_003",
+        "timestamp": "2025-10-01T03:28:11.699670"
+      },
+      {
+        "type": "purchase",
+        "product_id": "PROD_005",
+        "timestamp": "2025-10-01T03:37:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Windows",
+      "browser": "Firefox"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Stavanger"
+    }
+  },
+  {
+    "session_id": "sess_25",
+    "user_id": "user_10",
+    "start_time": "2025-09-28T15:52:11.699670",
+    "end_time": "2025-09-28T16:51:11.699670",
+    "events": [
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_005",
+        "timestamp": "2025-09-28T15:57:11.699670"
+      },
+      {
+        "type": "view_product",
+        "product_id": "PROD_003",
+        "timestamp": "2025-09-28T15:57:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_003",
+        "timestamp": "2025-09-28T16:00:11.699670"
+      },
+      {
+        "type": "add_to_cart",
+        "product_id": "PROD_007",
+        "timestamp": "2025-09-28T16:43:11.699670"
+      },
+      {
+        "type": "remove_from_cart",
+        "product_id": "PROD_003",
+        "timestamp": "2025-09-28T16:51:11.699670"
+      }
+    ],
+    "device": {
+      "os": "Linux",
+      "browser": "Safari"
+    },
+    "location": {
+      "country": "Norway",
+      "city": "Trondheim"
+    }
+  }
+]

@@ -8,10 +8,9 @@ terraform {
 }
 
 provider "snowflake" {
-  username = var.snowflake_username
+  user = var.snowflake_username
   password = var.snowflake_password
-  account  = var.snowflake_account
-  role     = "SYSADMIN"  # Adjust as needed
-  region   = var.snowflake_region  # Optional if not multi-region
+  account = var.snowflake_account
+  role = "SYSADMIN"  # Adjust as needed
 }
 

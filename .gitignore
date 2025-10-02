@@ -213,3 +213,7 @@ terraform.tfvars
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
+#snowflake credential
+.env
+
+a.out
