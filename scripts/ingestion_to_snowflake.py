@@ -58,7 +58,8 @@ def setup_schema(conn: snowflake.connector.SnowflakeConnection) -> None:
                 user_id STRING,
                 event_type STRING,
                 product_id STRING,
-                timestamp TIMESTAMP
+                timestamp TIMESTAMP,
+                ingested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
             );
         """)
         cur.execute("""
@@ -69,7 +70,8 @@ def setup_schema(conn: snowflake.connector.SnowflakeConnection) -> None:
                 end_time TIMESTAMP,
                 device VARIANT,
                 location VARIANT,
-                events VARIANT
+                events VARIANT,
+                ingested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
             );
         """)
     logging.info("Tables, stage and file formats created or verified")
@@ -90,10 +92,11 @@ def load_csv_events(conn: snowflake.connector.SnowflakeConnection, csv_path: Pat
                     user_id = source.$2,
                     event_type = source.$3,
                     product_id = source.$4,
-                    timestamp = TO_TIMESTAMP(source.$5)
+                    timestamp = TO_TIMESTAMP(source.$5),
+                    ingested_at = CURRENT_TIMESTAMP()
             WHEN NOT MATCHED THEN
-                INSERT (event_id,user_id,event_type,product_id,timestamp)
-                VALUES (source.$1,source.$2,source.$3,source.$4,TO_TIMESTAMP(source.$5));
+                INSERT (event_id,user_id,event_type,product_id,timestamp, ingested_at)
+                VALUES (source.$1,source.$2,source.$3,source.$4,TO_TIMESTAMP(source.$5), CURRENT_TIMESTAMP());
         """
         #Merging data from stage to table
         cur.execute(merge_sql)
@@ -129,11 +132,12 @@ def load_json_sessions(conn: snowflake.connector.SnowflakeConnection, json_path:
                     end_time = source.end_time,
                     device = source.device,
                     location = source.location,
-                    events = source.events
+                    events = source.events,
+                    ingested_at = CURRENT_TIMESTAMP()
             WHEN NOT MATCHED THEN
-                INSERT (session_id, user_id, start_time, end_time, device, location, events)
+                INSERT (session_id, user_id, start_time, end_time, device, location, events, ingested_at)
                 VALUES (source.session_id, source.user_id, source.start_time, source.end_time,
-                source.device, source.location, source.events);
+                source.device, source.location, source.events, CURRENT_TIMESTAMP());
         """
         cur.execute(merge_sql)
 
