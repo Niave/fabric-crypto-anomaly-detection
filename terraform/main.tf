@@ -13,10 +13,21 @@ resource "snowflake_schema" "silver" {
   name     = "SILVER"
   database = snowflake_database.product_analytics_db.name
 }
+resource "snowflake_schema" "silver_staging" {
+  name     = "SILVER_STAGING"
+  database = snowflake_database.product_analytics_db.name
+  comment  = "Staging schema for the Silver layer"
+}
 
 resource "snowflake_schema" "gold" {
   name     = "GOLD"
   database = snowflake_database.product_analytics_db.name
+}
+
+resource "snowflake_schema" "gold_staging" {
+  name     = "GOLD_STAGING"
+  database = snowflake_database.product_analytics_db.name
+  comment  = "Staging schema for the Gold layer"
 }
 
 resource "snowflake_warehouse" "analytics_wh" {
