@@ -215,5 +215,6 @@ terraform.tfstate
 terraform.tfstate.backup
 #snowflake credential
 .env
+.streamlit/secrets.toml
 
 a.out
