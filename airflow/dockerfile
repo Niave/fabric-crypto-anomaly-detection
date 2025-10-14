@@ -1,0 +1,4 @@
+FROM apache/airflow:2.8.1-python3.11
+
+# Install Snowpark + dotenv
+RUN pip install snowflake-snowpark-python

@@ -218,3 +218,6 @@ terraform.tfstate.backup
 .streamlit/secrets.toml
 
 a.out
+
+# Airflow logs
+airflow/logs/

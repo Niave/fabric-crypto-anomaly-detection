@@ -7,24 +7,10 @@ from snowflake.snowpark.table import  MergeResult
 from dotenv import load_dotenv
 
 
-#Defualt Configs
-load_dotenv() #Load credentials found in .env file
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-#Connection credentials
-connection_params={
-    "account": os.getenv("SNOWFLAKE_ACCOUNT"),
-    "user": os.getenv("SNOWFLAKE_USER"),
-    "password": os.getenv("SNOWFLAKE_PASSWORD"),
-    "warehouse": os.getenv("SNOWFLAKE_WAREHOUSE"),
-    "database": os.getenv("SNOWFLAKE_DATABASE"),
-    "schema": os.getenv("SNOWFLAKE_SCHEMA"),
-    "role": os.getenv("SNOWFLAKE_ROLE"),
-}
-# Check that all required environment variables are set
-missing = [k for k,v in connection_params.items() if not v]
-if missing:
-    raise ValueError(f"Missing enviroment variables: {','.join(missing)}")
+
 
 BRONZE_SCHEMA = "BRONZE"
 SILVER_SCHEMA = "SILVER"
@@ -250,7 +236,29 @@ def flatten_session(session: Session) -> None:
 
 
 
-def main(step: str):
+def main(step: str, env_path: str):
+   
+    # Check if file exists
+    if not os.path.exists(env_path):
+        raise FileNotFoundError(f".env file not found at path: {env_path}")
+    #Defualt Configs
+    load_dotenv(dotenv_path=env_path) #Load credentials found in .env file
+    #Connection credentials
+    connection_params={
+        "account": os.getenv("SNOWFLAKE_ACCOUNT"),
+        "user": os.getenv("SNOWFLAKE_USER"),
+        "password": os.getenv("SNOWFLAKE_PASSWORD"),
+        "warehouse": os.getenv("SNOWFLAKE_WAREHOUSE"),
+        "database": os.getenv("SNOWFLAKE_DATABASE"),
+        "schema": os.getenv("SNOWFLAKE_SCHEMA"),
+        "role": os.getenv("SNOWFLAKE_ROLE"),
+    }
+    # Check that all required environment variables are set
+    missing = [k for k,v in connection_params.items() if not v]
+    if missing:
+        raise ValueError(f"Missing enviroment variables: {','.join(missing)}")
+    
+    
     session = Session.builder.configs(connection_params).create()
     ensure_tables(session)
     try:
@@ -261,9 +269,11 @@ def main(step: str):
     finally:
         session.close()
         logging.info("Snowpark session closed.")
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--step", choices=["all", "events", "sessions"], default="all")
+    parser.add_argument("--env", default=".env", help="Path to .env file")
     args = parser.parse_args()
-    main(args.step)
+    main(args.step, args.env)

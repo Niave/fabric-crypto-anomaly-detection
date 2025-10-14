@@ -3,9 +3,12 @@ import logging
 import snowflake.connector
 from pathlib import Path
 from dotenv import load_dotenv
+import sys
 
-#Defualt Configs
-load_dotenv() #Load credentials found in .env file
+# Default configuration values, can be overridden by .env or CLI arguments
+env_path = sys.argv[1] if len(sys.argv) > 1 else '.env'
+load_dotenv(env_path) #Load credentials found in .env file
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 #Folder Stucture
