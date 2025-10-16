@@ -149,11 +149,22 @@ Open your browser at http://localhost:8080 and log in with the username and pass
 
 ### 6. Launch the Streamlit Dashboard
 
+In your project root directory, create a folder named `.streamlit` and inside it, create a file named `secrets.toml` with the following content to securely supply your Snowflake credentials to Streamlit:
+
+```text
+[snowflake]
+user = your_user
+password = your_password
+account = your_account
+warehouse = your_warehouse
+database = your_database
+schema = "GOLD"
+role = your_role
+```
 In a separate terminal window, run the Streamlit dashboard:
 
 ```bash
-cd dashboard
-streamlit run app.py
+streamlit run dashboard/app.py
 ```
 Visit the URL output by Streamlit (usually http://localhost:8501) to explore product analytics dashboards.
 
