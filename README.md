@@ -180,3 +180,7 @@ Visit the URL output by Streamlit (usually http://localhost:8501) to explore pro
 This stepwise setup reflects a typical production-style workflow starting from infrastructure provisioning with Terraform, containerized orchestration with Airflow, and data visualization with Streamlit.
 
 If you want me to help write this section directly into your README file or suggest improvements, just ask!
+
+### Author
+Created by Mustafa Hassan 
+GitHub: [@Niave](https://github.com/Niave)
