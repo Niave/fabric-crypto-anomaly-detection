@@ -105,7 +105,7 @@ def clean_events(session: Session) -> None:
     logging.info(f"Writing cleaned events to {EVENTS_STAGING_TABLE}...")
     events_cleaned.write.save_as_table(EVENTS_STAGING_TABLE, mode="overwrite")
 
-    #If silver table doesnt exist create it with the new cleaned events
+    #If silver table doesn't exist create it with the new cleaned events
     try:
         target_table = session.table(EVENTS_SILVER_TABLE)
     except Exception:
