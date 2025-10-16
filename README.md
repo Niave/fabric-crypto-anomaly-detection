@@ -40,6 +40,9 @@ issues with Snowpark. In production, Airflow orchestrates the scripts directly.*
 - Terraform automates provisioning of Snowflake infrastructure, including roles, databases, and schemas.
 - CI/CD pipelines automate code quality checks and deployment via GitHub Actions.
 
+### 📊 Architecture Diagram
+
+![Architecture Diagram](docs/Architecture-diagram.png)
 
 ## Folder Structure
 
