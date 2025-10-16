@@ -13,7 +13,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    st.image("dashboard/assets/logo.png", width= 150)
+    st.image("assets/logo.png", width= 150)
     st.markdown("Welcome! Use the sidebar to navigate and apply filters.")
     st.markdown("### ℹ️ About this Dashboard")
     st.info(

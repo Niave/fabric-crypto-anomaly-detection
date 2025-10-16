@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🧱 Pipeline Architecture")
 
-st.image("dashboard/assets/arc.png", use_container_width=True)
+st.image("assets/arc.png", use_container_width=True)
 
 st.markdown("""
 ### 🧠 Business Context
